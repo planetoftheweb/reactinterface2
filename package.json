@@ -1,25 +1,12 @@
 {
-  "name": "reactinterface",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+  "name": "slideserver",
+  "version": "1.0.1",
+  "description": "This package.json allows you to run a mini-server just for previewing presentations.",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-folder-index": "0.0.3",
+    "gulp-server-io": "^1.4.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "author": "Ray Villalobos"
 }
