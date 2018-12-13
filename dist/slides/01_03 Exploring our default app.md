@@ -1,33 +1,23 @@
-# Exploring our src folders
+The index.js file is loading our main component, which is called App, so let's take a look at that.
 
-Let's keep our exploration of what you get when you create an angular project with the CLI with what's in our src folder.
+The other components you build are going to be in this format.
 
-- `app` is where your main application code goes. This is where we'll be doing the majority of our programming.
+We're loading the main React object as well as an object called Component.
 
-- `assets` is where you place things like images and data that you want Angular to load. Right now, there's an empty
+Because we're using a logo, we can also load that and place it into a variable called logo. You'll see how that's used in a minute.
 
-`.gitkeep` file there. That's because github won't upload a folder unless it's empty so this little empty file makes sure that the folder uploads even when it's empty. Once you put something in here, you won't need this file anymore.
+We're also importing some CSS. The index.css applies to everything in our application. This is a separate CSS file that will only load when this component is loaded. One of the nice things about this approach is that you don't have to make one huge CSS document with all your styles.
 
-- The `environments` folder has a couple of files that lets you customize your programming environment. You can see that there are two files. A regular file and a prod file. The prod file would be used when you run an ng build command to build your final project.
+Next, using the class command, we create a new class we're calling app here. This class is based on another class called component, which we imported before.
 
-- `browserlist` has some configuration for how your css will magically pre fixed for older browser.
+Inside that class, we issue the render method. This method is the main place where things happen in your app. And it returns what you're going to show in the HTML-like tag that uses this component. In our case, it's the `<App>` tag in the index.html document.
 
-- There are some common web files like the `favicon.ico` file which shows a little icon on the corner of your browserbar
+What it's returning might seem both familiar and a bit weird to you. It's called JSX and it's a templating language that's a combination of HTML and JavaScript.
 
-- The index.html file is the HTML document that your app shows up in. Notice some interesting things about it. It doesn't import any css or javascript. That's magically handled by a plugin called webpack which is doing most of the heavy lifting in the automation.
+So you can see here that instead of using class in our HTML, you have to use className. That's because JavaScript already uses a class keyword.
 
-There's also a special tag here called `<app-root>`. This is where your application is loaded. You can customize your index.html file a bit, but don't go too crazy.
+The other weird thing about this JSX is the use of the `{logo}` variable. The curly brace is what we call an expression in a templating language. It's a place to place the value of a variable or a formula, which in this case is the logo we imported earlier.
 
-- `karma.conf.js` is a configuration file for karma, which is another testing framework. Yes, the Angular folks are really into testing.
+One last thing about this component that's not apparent. The return statement can only return one single object. Notice that there's a parent DIV that contains all our HTML. It won't work if I try to add another DIV, so just remember...a single container in the return.
 
-- `main.ts`. This is the entry point and essentially loads your application. It's not something you need to worry about too much, part of what . We'll go into this in a later video.
-
-- `pollyfill.ts` lets you configure how your application works in older browser by loading modules that do some transformations for you.
-
-- `styles.css` has the styles for your application. This is where you should place global styles that you want your entire page to have. You cona also ignore this if you don't need it.
-
-- `test.ts`. This is the main test file for your application.
-
-- `tsconfig.app.json`, `tsconfig.spec.json` and `tslint.json` are just local versions for the files we already saw in the main folder.
-
-There's a lot of files in there, and we'll only be working with some of them in our application, but I think it's important to know what they are and have an idea of what they do.
+Let's see this component in action. Open up a terminal and execute the `npm start` command. It's a good idea to try playing around with the JSX and make it your own to get used to things like classname.
