@@ -14,7 +14,7 @@ class AddAppointments extends Component {
         </div>
 
         <div className="card-body">
-          <form id="aptForm" noValidate onSubmit={this.handleAdd}>
+          <form id="aptForm" noValidate>
             <div className="form-group form-row">
               <label
                 className="col-md-2 col-form-label text-md-right"
