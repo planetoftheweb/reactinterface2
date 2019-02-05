@@ -21,7 +21,7 @@ class ListAppointments extends Component {
                   <Moment
                     date={item.aptDate}
                     parse="YYYY-MM-dd hh:mm"
-                    format="MMM-d h:mma"
+                    format="MMM-D h:mma"
                   />
                 </span>
               </div>
