@@ -11,8 +11,7 @@ class ListAppointments extends Component {
             <div className="mr-3">
               <button
                 className="pet-delete btn btn-sm btn-danger"
-                onClick={() => this.props.deleteAppointment(item)}
-              >
+                onClick={() => this.props.deleteAppointment(item)}>
                 <FaTimes />
               </button>
             </div>
@@ -29,8 +28,7 @@ class ListAppointments extends Component {
                       e.target.innerText,
                       item.aptId
                     )
-                  }
-                >
+                  }>
                   {item.aptId}--
                   {item.petName}
                 </span>
@@ -38,7 +36,7 @@ class ListAppointments extends Component {
                   <Moment
                     date={item.aptDate}
                     parse="YYYY-MM-dd hh:mm"
-                    format="MMM-d h:mma"
+                    format="MMM-D h:mma"
                   />
                 </span>
               </div>
@@ -54,8 +52,7 @@ class ListAppointments extends Component {
                       e.target.innerText,
                       item.aptId
                     )
-                  }
-                >
+                  }>
                   {item.ownerName}
                 </span>
               </div>
@@ -69,8 +66,7 @@ class ListAppointments extends Component {
                     e.target.innerText,
                     item.aptId
                   )
-                }
-              >
+                }>
                 {item.aptNotes}
               </div>
             </div>
