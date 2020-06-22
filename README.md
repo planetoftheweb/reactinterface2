@@ -2,6 +2,8 @@
 
 This is the repository for my course React: Building an Interface. The full course is available on LinkedIn Learning.
 
+I forked it and made certain modifications to it.
+
 ## Instructions
 
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage. Or you can simply add `/tree/BRANCH_NAME` to the URL to go to the branch you want to peek at.
