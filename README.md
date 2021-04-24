@@ -1,6 +1,6 @@
-# Building a Web Interface with Angular
+# React: Building an Interface
 
-This is the repository for my course Building a Web Interface with React. The full course is available on LinkedIn Learning.
+This is the repository for my course React: Building an Interface. The full course is available on LinkedIn Learning.
 
 ## Instructions
 
@@ -13,9 +13,11 @@ The branches are structured so that they correspond to the videos in the course.
 ## Installing
 
 1. Make sure you have these installed
-   - [node.js](http://nodejs.org/)
-   - [git](http://git-scm.com/)
-   - [create react app](https://facebook.github.io/create-react-app/)
+
+- [node.js](http://nodejs.org/)
+- [git](http://git-scm.com/)
+- [Create React App](https://facebook.github.io/create-react-app/)
+
 2. Clone this repository into your local machine using the terminal (mac) or Gitbash (PC) `> git clone CLONEURL`
 3. CD to the folder `cd FOLDERNAME`
 4. Run `npm install` to install the project dependencies
@@ -25,13 +27,13 @@ The branches are structured so that they correspond to the videos in the course.
 
 For more advanced users, you can also download all of the branches for this repository.
 
-1. `mkdir NAME`
-1. `cd NAME`
-1. `git clone --bare CLONEURL .git` (make sure you add extra .git)
-1. `git config --bool core.bare false`
-1. `git reset --hard`
-1. Run `npm install` to install the project dependencies
-1. Run `ng serve` to start live preview server
+1.  `mkdir NAME`
+1.  `cd NAME`
+1.  `git clone --bare CLONEURL .git` (make sure you add extra .git)
+1.  `git config --bool core.bare false`
+1.  `git reset --hard`
+1.  Run `npm install` to install the project dependencies
+1.  Run `npm start` to start live preview server
 
 For advanced instructions of how to work with this and other courses with github repos, check out the course: [Learning Git and Github](https://linkedin-learning.pxf.io/c/1252977/449670/8005?subId1=githubrepo&u=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Flearning-git-and-github):
 
