@@ -3,7 +3,7 @@ jobs:
   # running commands on a basic image
   Hello-World:
     docker:
-      - image: cimg/base:2021.04
+      - image: alpine:3.15
         auth:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
@@ -39,6 +39,18 @@ jobs:
           name: Running the Node Container
           command: |
             node -v
+  Now-Complete:
+    docker:
+      - image: alpine:3.15
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+    steps:
+      - run:
+          name: Approval Complete
+          command: |
+            echo 'The work is now complete.'
+
 workflows:
   Example-Workflow:
     jobs:
@@ -49,3 +61,11 @@ workflows:
       - Using-Node:
           requires:
             - Fetch-Code
+      - Hold-for-Approval:
+          type: approval
+          requires:
+            - Using-Node
+            - Fetch-Code
+      - Now-Complete:
+          requires:
+            - Hold-for-Approval
