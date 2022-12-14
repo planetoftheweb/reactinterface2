@@ -67,7 +67,6 @@ class AddAppointments extends Component {
               <label
                 className="col-md-2 col-form-label text-md-right"
                 htmlFor="petName"
-                readOnly
               >
                 Pet Name
               </label>
@@ -139,7 +138,7 @@ class AddAppointments extends Component {
 
             <div className="form-group form-row">
               <label className="col-md-2 text-md-right" htmlFor="aptNotes">
-                Apt. Notes
+                Reason for Appointment
               </label>
               <div className="col-md-10">
                 <textarea
